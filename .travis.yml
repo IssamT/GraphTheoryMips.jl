@@ -12,3 +12,7 @@ notifications:
 #script:
 #  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
 #  - julia -e 'Pkg.clone(pwd()); Pkg.build("MathPrograms"); Pkg.test("MathPrograms"; coverage=true)'
+
+
+after_success:
+- julia -e 'cd(Pkg.dir("MathPrograms")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'

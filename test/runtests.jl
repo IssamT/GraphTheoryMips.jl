@@ -1,6 +1,10 @@
 using MathPrograms
 #using Base.Test
 using FactCheck
+using JuMP
+using Cbc
+using LightGraphs
+
 
 function make_simple_undirected_graph{T<:Integer}(n::T, edgelist::Vector{Tuple{T,T}})
     g = Graph(n)
