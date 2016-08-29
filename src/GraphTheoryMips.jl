@@ -1,4 +1,4 @@
-module MathPrograms
+module GraphTheoryMips
 
 using JuMP
 using Cbc

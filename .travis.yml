@@ -11,8 +11,8 @@ notifications:
 # uncomment the following lines to override the default test script
 #script:
 #  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
-#  - julia -e 'Pkg.clone(pwd()); Pkg.build("MathPrograms"); Pkg.test("MathPrograms"; coverage=true)'
+#  - julia -e 'Pkg.clone(pwd()); Pkg.build("GraphTheoryMips"); Pkg.test("GraphTheoryMips"; coverage=true)'
 
 
 after_success:
-- julia -e 'cd(Pkg.dir("MathPrograms")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+- julia -e 'cd(Pkg.dir("GraphTheoryMips")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'

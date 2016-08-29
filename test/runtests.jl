@@ -1,4 +1,4 @@
-using MathPrograms
+using GraphTheoryMips
 #using Base.Test
 using FactCheck
 using JuMP
