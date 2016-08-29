@@ -1,4 +1,4 @@
-# MathPrograms
+# GraphTheoryMips 
 
 A new project where I plan to gather some of the useful mips for combinatorial optimization
 
